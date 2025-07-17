@@ -35,7 +35,7 @@ function getUrl(relativePath?: string) {
     return "http://localhost:3000";
   })();
 
-  return relativePath ? `${base}/api/trpc/${relativePath}` : `${base}/api/trpc`;
+  return relativePath ? `${base}/api/${relativePath}` : `${base}/api`;
 }
 
 export function TRPCReactProvider(

@@ -10,7 +10,7 @@ export const appRouter = createTRPCRouter({
     )
     .query((opts) => {
       return {
-        greeting: `hello support ${opts.ctx.support} ${opts.input.text}`,
+        greeting: `hello support ${opts.ctx.supportId} ${opts.input.text}`,
       };
     }),
 });
