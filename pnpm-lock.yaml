@@ -22,13 +22,13 @@ importers:
         version: 5.83.0(react@19.1.0)
       '@trpc/client':
         specifier: ^11.4.3
-        version: 11.4.3(@trpc/server@11.4.3(typescript@5.8.3))(typescript@5.8.3)
+        version: 11.4.3(@trpc/server@11.8.0(typescript@5.8.3))(typescript@5.8.3)
       '@trpc/server':
-        specifier: ^11.4.3
-        version: 11.4.3(typescript@5.8.3)
+        specifier: ^11.8.0
+        version: 11.8.0(typescript@5.8.3)
       '@trpc/tanstack-react-query':
         specifier: ^11.4.3
-        version: 11.4.3(@tanstack/react-query@5.83.0(react@19.1.0))(@trpc/client@11.4.3(@trpc/server@11.4.3(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.4.3(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
+        version: 11.4.3(@tanstack/react-query@5.83.0(react@19.1.0))(@trpc/client@11.4.3(@trpc/server@11.8.0(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.8.0(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
       '@vercel/otel':
         specifier: ^1.13.0
         version: 1.13.0(@opentelemetry/api-logs@0.203.0)(@opentelemetry/api@1.9.0)(@opentelemetry/instrumentation@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/resources@2.0.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-logs@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-metrics@1.30.1(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))
@@ -85,7 +85,7 @@ importers:
         version: 3.3.1
       trpc-to-openapi:
         specifier: ^2.3.2
-        version: 2.3.2(@trpc/server@11.4.3(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.25.76))(zod@3.25.76)
+        version: 2.3.2(@trpc/server@11.8.0(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.25.76))(zod@3.25.76)
       zod:
         specifier: '3'
         version: 3.25.76
@@ -935,8 +935,8 @@ packages:
       '@trpc/server': 11.4.3
       typescript: '>=5.7.2'
 
-  '@trpc/server@11.4.3':
-    resolution: {integrity: sha512-wnWq3wiLlMOlYkaIZz+qbuYA5udPTLS4GVVRyFkr6aT83xpdCHyVtURT+u4hSoIrOXQM9OPCNXSXsAujWZDdaw==}
+  '@trpc/server@11.8.0':
+    resolution: {integrity: sha512-DphyQnLuyX2nwJCQGWQ9zYz4hZGvRhSBqDhQ0SH3tDhQ3PU4u68xofA0pJ741Ir4InEAFD+TtJVLAQy+wVOkiQ==}
     peerDependencies:
       typescript: '>=5.7.2'
 
@@ -2185,6 +2185,7 @@ packages:
   next@15.4.1:
     resolution: {integrity: sha512-eNKB1q8C7o9zXF8+jgJs2CzSLIU3T6bQtX6DcTnCq1sIR1CJ0GlSyRs1BubQi3/JgCnr9Vr+rS5mOMI38FFyQw==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3321,20 +3322,20 @@ snapshots:
       '@tanstack/query-core': 5.83.0
       react: 19.1.0
 
-  '@trpc/client@11.4.3(@trpc/server@11.4.3(typescript@5.8.3))(typescript@5.8.3)':
+  '@trpc/client@11.4.3(@trpc/server@11.8.0(typescript@5.8.3))(typescript@5.8.3)':
     dependencies:
-      '@trpc/server': 11.4.3(typescript@5.8.3)
+      '@trpc/server': 11.8.0(typescript@5.8.3)
       typescript: 5.8.3
 
-  '@trpc/server@11.4.3(typescript@5.8.3)':
+  '@trpc/server@11.8.0(typescript@5.8.3)':
     dependencies:
       typescript: 5.8.3
 
-  '@trpc/tanstack-react-query@11.4.3(@tanstack/react-query@5.83.0(react@19.1.0))(@trpc/client@11.4.3(@trpc/server@11.4.3(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.4.3(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)':
+  '@trpc/tanstack-react-query@11.4.3(@tanstack/react-query@5.83.0(react@19.1.0))(@trpc/client@11.4.3(@trpc/server@11.8.0(typescript@5.8.3))(typescript@5.8.3))(@trpc/server@11.8.0(typescript@5.8.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.8.3)':
     dependencies:
       '@tanstack/react-query': 5.83.0(react@19.1.0)
-      '@trpc/client': 11.4.3(@trpc/server@11.4.3(typescript@5.8.3))(typescript@5.8.3)
-      '@trpc/server': 11.4.3(typescript@5.8.3)
+      '@trpc/client': 11.4.3(@trpc/server@11.8.0(typescript@5.8.3))(typescript@5.8.3)
+      '@trpc/server': 11.8.0(typescript@5.8.3)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       typescript: 5.8.3
@@ -5220,9 +5221,9 @@ snapshots:
 
   toidentifier@1.0.1: {}
 
-  trpc-to-openapi@2.3.2(@trpc/server@11.4.3(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.25.76))(zod@3.25.76):
+  trpc-to-openapi@2.3.2(@trpc/server@11.8.0(typescript@5.8.3))(zod-openapi@4.2.4(zod@3.25.76))(zod@3.25.76):
     dependencies:
-      '@trpc/server': 11.4.3(typescript@5.8.3)
+      '@trpc/server': 11.8.0(typescript@5.8.3)
       co-body: 6.2.0
       h3: 1.15.1
       openapi3-ts: 4.4.0
